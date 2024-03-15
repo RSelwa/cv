@@ -1,25 +1,13 @@
 import {
-  AmbitLogo,
-  BarepapersLogo,
-  BimLogo,
-  CDGOLogo,
   ClevertechLogo,
   ConsultlyLogo,
-  EvercastLogo,
-  Howdy,
-  JarockiMeLogo,
   JojoMobileLogo,
-  Minimal,
-  MobileVikingsLogo,
-  MonitoLogo,
-  NSNLogo,
   ParabolLogo,
-  TastyCloudLogo,
-  YearProgressLogo,
 } from "@/images/logos";
-import { GitHubIcon, LinkedInIcon, XIcon } from "@/components/icons";
+import { GitHubIcon, LinkedInIcon } from "@/components/icons";
+import { UserData } from "@/types";
 
-export const RESUME_DATA = {
+export const RESUME_DATA: UserData = {
   name: "Raphael SELWA",
   initials: "RS",
   location: "Paris, France",
@@ -29,7 +17,7 @@ export const RESUME_DATA = {
   summary:
     "As a Front End Engineer, I have successfully taken multiple products from 0 to 1. I lead teams effectively, ensuring an environment where people can do their best work. Currently, I work mostly with TypeScript, React, Node.js, and GraphQL. I have over 8 years of experience in working remotely with companies all around the world.",
   avatarUrl: "https://avatars.githubusercontent.com/u/55576838?v=4",
-  personalWebsiteUrl: "https://jarocki.me",
+  personalWebsiteUrl: "https://raphael-selwa-curriculum-vitae.vercel.app/",
   contact: {
     email: "selwa.raphael@gmail.com",
     tel: "+33782368403",
@@ -49,13 +37,14 @@ export const RESUME_DATA = {
   education: [
     {
       school: "ESGI - école supérieure de génie informatique",
-      degree: "Master en ingénérie web",
+      degree: "Master en ingénérie web - Alternance chez FLIM",
       start: "2022",
       end: "2024",
     },
     {
       school: "Sorbonne université",
-      degree: "Licence Professionnelle - Web Application",
+      degree:
+        "Licence Professionnelle - Applications Web et Mobiles - Alternance chez Moss SAS",
       start: "2021",
       end: "2022",
     },
@@ -64,45 +53,40 @@ export const RESUME_DATA = {
     {
       company: "FLIM",
       link: "https://flim.ai/",
-      badges: [],
-      title: "Front-end Développeur",
+      badges: ["Alternance"],
+      title: "Développeur front-end",
       logo: ParabolLogo,
       start: "2021",
-      end: "2024",
+      end: new Date().getFullYear(),
       description:
-        "Implemented new features, led squad, worked on improving the way developers ship the code, started migration from Emotion to Tailwind CSS and more. Technologies: React, TypeScript, GraphQL",
+        "Implémentation de nouvelles fonctionnalités, travaille sur l'amélioration du code, migration de scss vers Tailwind CSS. Technologies utilisées : React, TypeScript, Firebase.",
     },
     {
-      company: "Clevertech",
-      link: "https://clevertech.biz",
-      badges: ["Remote"],
-      title: "Lead Android Developer → Full Stack Developer",
+      company: "Freelance",
+      link: "/",
+      badges: [],
+      title: "Développeur freelance",
+      logo: JojoMobileLogo,
+      start: "2023",
+      end: new Date().getFullYear(),
+      customBullet: "👉",
+      description: [
+        "Optimisation SEO",
+        "Réparation de sites Wordpress",
+        "Optimisation formulaires Typeform et Calendly",
+        "Amélioration contenu et design de sites web",
+      ],
+    },
+    {
+      company: "Moss SAS",
+      link: "/",
+      badges: ["Alternance"],
+      title: "Développeur web",
       logo: ClevertechLogo,
-      start: "2015",
+      start: "2020",
       end: "2021",
       description:
-        "Created Android mobile apps and led teams for companies like Vision Media, DKMS, or AAA. Built live streaming application for Evercast from scratch. Technologies: Android, Kotlin, React, TypeScript, GraphQL",
-    },
-    {
-      company: "Jojo Mobile",
-      link: "https://bsgroup.eu/",
-      badges: [],
-      title: "Android Developer → Lead Android Developer",
-      logo: JojoMobileLogo,
-      start: "2012",
-      end: "2015",
-      description:
-        "Built an Android team, created Android apps for biggest Polish companies like LOT, Polskie Radio, Agora, PolskaPress",
-    },
-    {
-      company: "Nokia Siemens Networks",
-      link: "https://www.nokia.com",
-      badges: [],
-      title: "C/C++ Developer",
-      logo: NSNLogo,
-      start: "2010",
-      end: "2012",
-      description: "Creating and testing software for LTE base stations",
+        "Creation et automatisation de tests unitaires et fonctionnels, développement de nouvelles fonctionnalités, maintenance et amélioration de l'application web. Technologies: Selenium, Java, Angular",
     },
   ],
   skills: [
@@ -113,166 +97,107 @@ export const RESUME_DATA = {
     "Firebase",
     "Python",
   ],
+  // Bot scrapper flim
+  // BO FLim
+  // Front end Flim
+  // Les secrets de l'immobilier typeform Calendly
+  // Immocompare
+  // application doctolib
+  // site F1
+  // Site météo
+  // Ancien portfolio Three JS
+  // Application Picollo
+  // Cartes wankil
+  //? Jeu pour un streamer
   projects: [
     {
-      title: "Consultly",
-      techStack: [
-        "Side Project",
-        "TypeScript",
-        "Next.js",
-        "Vite",
-        "GraphQL",
-        "WebRTC",
+      title: "FLIM 👀",
+      year: `2022 - ${new Date().getFullYear()}`,
+      techStack: ["TypeScript", "Next.js", "React", "Firebase"],
+      description: ["Front-end", "Bot scrapper", "Back-office", "Stripe"],
+      link: {
+        label: "flim.ai",
+        href: "https://flim.ai/",
+      },
+    },
+    {
+      title: "Les secrets de l'immobillier 🏢",
+      year: "2024",
+      techStack: ["Freelance", "Wordpress", "Calendly", "Typeform"],
+      description: [
+        "Création de pages",
+        "Amélioration formulaires de rendez-vous",
+        "Optimisation SEO",
       ],
-      description: "A platform to build and grow your online business",
-      logo: ConsultlyLogo,
-      link: {
-        label: "consultly.com",
-        href: "https://consultly.com/",
-      },
     },
     {
-      title: "Monito",
-      techStack: ["Side Project", "TypeScript", "Next.js", "Browser Extension"],
+      title: "Immocompare 🏢",
+      techStack: ["Freelance", "Wordpress"],
       description:
-        "Browser extension that records everything happening in a web application",
-      logo: MonitoLogo,
-      link: {
-        label: "monito.dev",
-        href: "https://monito.dev/",
-      },
+        "Réparation de sites Wordpress et optimisation de la mise en cache",
     },
     {
-      title: "Jarocki.me",
-      techStack: ["Side Project", "Next.js", "MDX"],
-      description:
-        "My personal website and blog. Built with Next.js and Notion API",
-      logo: JarockiMeLogo,
-      link: {
-        label: "github.com",
-        href: "https://jarocki.me/",
-      },
-    },
-    {
-      title: "Minimal",
-      techStack: ["Side Project", "Next.js", "Puppeteer"],
-      description:
-        "Minimalist calendars, habit trackers and planners generator",
-      logo: Minimal,
-      link: {
-        label: "useminimal.com",
-        href: "https://useminimal.com/",
-      },
-    },
-    {
-      title: "Barepapers",
-      techStack: ["Side Project", "Next.js", "Puppeteer"],
-      description:
-        "Generates beautiful wallpapers using random shapes and gradients",
-      logo: BarepapersLogo,
-      link: {
-        label: "barepapers.com",
-        href: "https://barepapers.com/",
-      },
-    },
-    {
-      title: "Year progress",
-      techStack: ["Side Project", "TypeScript", "Next.js"],
-      description: "Tracks current year progress and displays a countdown",
-      logo: YearProgressLogo,
-      link: {
-        label: "getyearprogress.com",
-        href: "https://getyearprogress.com/",
-      },
-    },
-    {
-      title: "Parabol",
+      title: "Clone Doctolib 🩺",
+      year: "2023",
       techStack: [
-        "Full Stack Developer",
-        "TypeScript",
+        "Projet Master",
         "React",
-        "Node.js",
-        "GraphQL",
-      ],
-      description:
-        "The Agile meeting co-pilot that delivers better meetings with less effort",
-      logo: ParabolLogo,
-      link: {
-        label: "github.com",
-        href: "https://parabol.co/",
-      },
-    },
-    {
-      title: "Evercast",
-      techStack: [
-        "Lead Frontend Developer",
-
+        "API Platform",
         "TypeScript",
-        "React",
-        "Node.js",
-        "GraphQL",
+        "PHP",
+        "Google API",
       ],
       description:
-        "Creative collaboration platform that combines video conferencing and HD media streaming",
-      logo: EvercastLogo,
+        "Création d'une application web pour la prise de rendez-vous médicaux, selon la localisation des patients et des médecins",
+    },
+    {
+      title: "Clone Site F1 🏎️",
+      techStack: ["Side Project", "React", "API Formula 1", "TypeScript"],
       link: {
-        label: "evercast.us",
-        href: "https://www.evercast.us/",
+        href: "https://formula-1-rselwa.vercel.app/",
+        label: "Voir le site",
       },
+      year: "2021",
+      description:
+        "Site permettant de suivre la saison actuelle de Formule 1, avec les résultats des courses, les classements, les horaires des courses, les informations sur les pilotes et les écuries",
     },
     {
-      title: "Mobile Vikings",
-      techStack: ["Lead Android Developer", "Android", "Kotlin"],
-      description:
-        "Android application for leading virtual mobile operator in Poland",
-      logo: MobileVikingsLogo,
+      title: "Weather app 🌤️",
+      techStack: ["Side Project", "React", "Open Weather", "TypeScript"],
       link: {
-        label: "mobilevikings.pl",
-        href: "https://mobilevikings.pl/",
+        href: "https://weather-app-rselwa.vercel.app/",
+        label: "Voir le site",
       },
+      year: "2021",
+      description: "Site permettant de voir la météo selon la ville souhaité",
     },
     {
-      title: "Howdy",
-      techStack: ["Lead Android Developer", "Android", "Kotlin"],
-      description:
-        "Howdy is a place for you to join communities you care about",
-      logo: Howdy,
+      title: "Portfolio (old) 📜",
+      techStack: ["Side Project", "React", "Three JS", "TypeScript"],
       link: {
-        label: "play.google.com",
-        href: "https://howdy.co/",
+        href: "https://selwa-portfolio.vercel.app/",
+        label: "Voir le site",
       },
+      year: "2021",
+      description: "Ancien portfolio réalisé avec Three JS",
     },
     {
-      title: "Tastycloud",
-      techStack: ["Lead Android Developer", "Android", "Kotlin"],
+      title: "Application mobile 📱",
+      techStack: ["Side Project", "React Native", "TypeScript"],
+      year: "2021",
       description:
-        "Android application for managing and displaying restaurant menus in kiosk mode",
-      logo: TastyCloudLogo,
+        "Ancienne application mobile comme Picollo réalisée avec React Native",
+    },
+    {
+      title: "Jeu carte 3D 🃏",
+      techStack: ["Side Project", "Creative coding", "React", "TypeScript"],
+      year: "2022",
       link: {
-        label: "tastycloud.fr",
-        href: "https://www.tastycloud.fr/",
+        href: "https://wankul-origins.vercel.app/cards",
+        label: "Voir le site",
       },
-    },
-    {
-      title: "Ambit",
-      techStack: ["Lead Android Developer", "Android", "Kotlin"],
       description:
-        "Android application that helps with sharing your contact details",
-      logo: AmbitLogo,
-    },
-    {
-      title: "Bim",
-      techStack: ["Lead Android Developer", "Android", "Kotlin"],
-      description:
-        "Android application that helps with booking a table in a restaurants",
-      logo: BimLogo,
-    },
-    {
-      title: "Canal Digital GO",
-      techStack: ["Lead Android Developer", "Android", "Kotlin"],
-      description:
-        "Video streaming mobile application for Canal Digital subscribers",
-      logo: CDGOLogo,
+        "Jeu de carte 3D avec effets holographiques pour un streamer connu (voir sur pc)",
     },
   ],
-} as const;
+};
