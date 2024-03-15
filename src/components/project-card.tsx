@@ -7,6 +7,7 @@ import {
 } from "./ui/card";
 import { Badge } from "./ui/badge";
 import { Project } from "@/types";
+import Description from "@/components/description";
 
 interface Props {
   title: string;
@@ -55,18 +56,10 @@ export function ProjectCard({
             {link?.replace("https://", "").replace("www.", "").replace("/", "")}
           </div>
           <CardDescription className="font-mono text-xs">
-            {typeof description === "string" ? (
-              <p>{description}</p>
-            ) : (
-              description?.map((desc) => {
-                return (
-                  <p key={desc} className="mb-1">
-                    <span className="mr-2">{customBullet || "•"}</span>
-                    {desc}
-                  </p>
-                );
-              })
-            )}
+            <Description
+              description={description}
+              customBullet={customBullet}
+            />
           </CardDescription>
         </div>
       </CardHeader>

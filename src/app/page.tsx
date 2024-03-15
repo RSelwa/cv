@@ -8,6 +8,7 @@ import { GlobeIcon, MailIcon, PhoneIcon } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { RESUME_DATA } from "@/data/resume-data";
 import { ProjectCard } from "@/components/project-card";
+import Description from "@/components/description";
 
 export const metadata: Metadata = {
   title: `${RESUME_DATA.name} | ${RESUME_DATA.about}`,
@@ -136,20 +137,10 @@ export default function Page() {
                   </h4>
                 </CardHeader>
                 <CardContent className="mt-2 text-xs">
-                  {typeof work.description === "string" ? (
-                    <p>{work.description}</p>
-                  ) : (
-                    work.description?.map((desc) => {
-                      return (
-                        <p key={desc} className="mb-1">
-                          <span className="mr-2">
-                            {work?.customBullet || "•"}
-                          </span>
-                          {desc}
-                        </p>
-                      );
-                    })
-                  )}
+                  <Description
+                    description={work.description}
+                    customBullet={work.customBullet}
+                  />
                 </CardContent>
               </Card>
             );
