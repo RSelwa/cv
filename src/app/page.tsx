@@ -187,6 +187,7 @@ export default function Page() {
                   tags={project.techStack}
                   link={"link" in project ? project.link?.href : undefined}
                   year={project.year}
+                  customBullet={project.customBullet}
                 />
               );
             })}

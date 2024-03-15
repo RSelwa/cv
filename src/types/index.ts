@@ -28,7 +28,7 @@ export type Project = {
   techStack: string[];
   description: string | string[];
   customBullet?: string;
-  logo: any; // Remplacer "any" par le type réel du logo si possible
+  logo?: any; // Remplacer "any" par le type réel du logo si possible
   year?: string;
   link?: {
     label: string;
