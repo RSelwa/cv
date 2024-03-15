@@ -106,7 +106,11 @@ export default function Page() {
                 <CardHeader>
                   <div className="flex items-center justify-between gap-x-2 text-base">
                     <h3 className="inline-flex items-center justify-center gap-x-1 font-semibold leading-none">
-                      <a className="hover:underline" href={work.link}>
+                      <a
+                        className="hover:underline"
+                        href={work.link}
+                        target="_blank"
+                      >
                         {work.company}
                       </a>
 
@@ -132,7 +136,20 @@ export default function Page() {
                   </h4>
                 </CardHeader>
                 <CardContent className="mt-2 text-xs">
-                  {work.description}
+                  {typeof work.description === "string" ? (
+                    <p>{work.description}</p>
+                  ) : (
+                    work.description?.map((desc) => {
+                      return (
+                        <p key={desc} className="mb-1">
+                          <span className="mr-2">
+                            {work?.customBullet || "•"}
+                          </span>
+                          {desc}
+                        </p>
+                      );
+                    })
+                  )}
                 </CardContent>
               </Card>
             );
@@ -168,7 +185,7 @@ export default function Page() {
         </Section>
 
         <Section className="print-force-new-page scroll-mb-16">
-          <h2 className="text-xl font-bold">Projects</h2>
+          <h2 className="text-xl font-bold">Missions et projets</h2>
           <div className="-mx-3 grid grid-cols-1 gap-3 print:grid-cols-3 print:gap-2 md:grid-cols-2 lg:grid-cols-3">
             {RESUME_DATA.projects.map((project) => {
               return (
@@ -177,7 +194,8 @@ export default function Page() {
                   title={project.title}
                   description={project.description}
                   tags={project.techStack}
-                  link={"link" in project ? project.link.href : undefined}
+                  link={"link" in project ? project.link?.href : undefined}
+                  year={project.year}
                 />
               );
             })}
