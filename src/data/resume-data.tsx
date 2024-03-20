@@ -15,7 +15,7 @@ export const RESUME_DATA: UserData = {
   about:
     "Ingénieur Développeur Web axé sur la construction de produits avec une attention particulière aux détails",
   summary:
-    "J’ai plus de 3 ans d’expérience dans le domaine du développement web entre mes études et mes expériences professionnelles. J’ai travaillé sur des projets variés, allant de la création de sites web, d’applications mobiles, de bots, de scrapper, de back-office, de front-end, de back-end, de tests unitaires et fonctionnels, de maintenance et d’amélioration de l’application web. J’ai également travaillé sur des projets de SEO, de réparation de sites Wordpress, d’optimisation de formulaires Typeform et Calendly, d’amélioration de contenu et de design de sites web.",
+    "En tant que développeur web, j’ai travaillé sur des projets variés, allant de la création de sites web, d’applications mobiles, de bots, de scrapper, de back-office, de front-end, de back-end, de tests unitaires et fonctionnels, de maintenance et d’amélioration de l’application web. J’ai également travaillé sur des projets de SEO, de réparation de sites Wordpress, d’optimisation de formulaires Typeform et Calendly, d’amélioration de contenu et de design de sites web. ",
   avatarUrl: "https://avatars.githubusercontent.com/u/55576838?v=4",
   personalWebsiteUrl: "https://raphael-selwa-curriculum-vitae.vercel.app/",
   contact: {
