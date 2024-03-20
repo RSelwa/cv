@@ -48,18 +48,7 @@ export default function Page() {
                   </a>
                 </Button>
               ) : null}
-              {RESUME_DATA.contact.tel ? (
-                <Button
-                  className="size-8"
-                  variant="outline"
-                  size="icon"
-                  asChild
-                >
-                  <a href={`tel:${RESUME_DATA.contact.tel}`}>
-                    <PhoneIcon className="size-4" />
-                  </a>
-                </Button>
-              ) : null}
+
               {RESUME_DATA.contact.social.map((social) => (
                 <Button
                   key={social.name}
@@ -80,11 +69,6 @@ export default function Page() {
                   <span className="underline">{RESUME_DATA.contact.email}</span>
                 </a>
               ) : null}
-              {RESUME_DATA.contact.tel ? (
-                <a href={`tel:${RESUME_DATA.contact.tel}`}>
-                  <span className="underline">{RESUME_DATA.contact.tel}</span>
-                </a>
-              ) : null}
             </div>
           </div>
 
@@ -94,13 +78,13 @@ export default function Page() {
           </Avatar>
         </div>
         <Section>
-          <h2 className="text-xl font-bold">About</h2>
+          <h2 className="text-xl font-bold">A propos</h2>
           <p className="text-pretty font-mono text-sm text-muted-foreground">
             {RESUME_DATA.summary}
           </p>
         </Section>
         <Section>
-          <h2 className="text-xl font-bold">Work Experience</h2>
+          <h2 className="text-xl font-bold">Expériences Professionnelle</h2>
           {RESUME_DATA.work.map((work) => {
             return (
               <Card key={work.company}>
@@ -147,7 +131,7 @@ export default function Page() {
           })}
         </Section>
         <Section>
-          <h2 className="text-xl font-bold">Education</h2>
+          <h2 className="text-xl font-bold">Diplomes</h2>
           {RESUME_DATA.education.map((education) => {
             return (
               <Card key={education.school}>

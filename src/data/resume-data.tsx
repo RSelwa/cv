@@ -20,7 +20,6 @@ export const RESUME_DATA: UserData = {
   personalWebsiteUrl: "https://raphael-selwa-curriculum-vitae.vercel.app/",
   contact: {
     email: "selwa.raphael@gmail.com",
-    tel: "+33782368403",
     social: [
       {
         name: "GitHub",
@@ -96,6 +95,8 @@ export const RESUME_DATA: UserData = {
     "Node.js",
     "Firebase",
     "Python",
+    "Tailwind",
+    "Redux",
   ],
   // Bot scrapper flim
   // BO FLim
@@ -172,7 +173,7 @@ export const RESUME_DATA: UserData = {
       description: "Site permettant de voir la météo selon la ville souhaité",
     },
     {
-      title: "Portfolio (old) 📜",
+      title: "Portfolio (ancien) 📜",
       techStack: ["Side Project", "React", "Three JS", "TypeScript"],
       link: {
         href: "https://selwa-portfolio.vercel.app/",

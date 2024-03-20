@@ -38,7 +38,6 @@ export type Project = {
 
 export type Contact = {
   email: string;
-  tel: string;
   social: SocialLink[];
 };
 
