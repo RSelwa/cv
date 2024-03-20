@@ -57,7 +57,7 @@ export default function Page() {
                   size="icon"
                   asChild
                 >
-                  <a href={social.url}>
+                  <a target="_blank" href={social.url}>
                     <social.icon className="size-4" />
                   </a>
                 </Button>
