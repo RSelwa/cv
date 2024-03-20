@@ -11,11 +11,11 @@ export const RESUME_DATA: UserData = {
   name: "Raphael SELWA",
   initials: "RS",
   location: "Paris, France",
-  locationLink: "https://www.google.com/maps/place/Wrocław",
+  locationLink: "https://www.google.com/maps/place/Paris",
   about:
-    "Front End Engineer focused on building products with extra attention to detail",
+    "Ingénieur Développeur Web axé sur la construction de produits avec une attention particulière aux détails",
   summary:
-    "As a Front End Engineer, I have successfully taken multiple products from 0 to 1. I lead teams effectively, ensuring an environment where people can do their best work. Currently, I work mostly with TypeScript, React, Node.js, and GraphQL. I have over 8 years of experience in working remotely with companies all around the world.",
+    "J’ai plus de 3 ans d’expérience dans le domaine du développement web entre mes études et mes expériences professionnelles. J’ai travaillé sur des projets variés, allant de la création de sites web, d’applications mobiles, de bots, de scrapper, de back-office, de front-end, de back-end, de tests unitaires et fonctionnels, de maintenance et d’amélioration de l’application web. J’ai également travaillé sur des projets de SEO, de réparation de sites Wordpress, d’optimisation de formulaires Typeform et Calendly, d’amélioration de contenu et de design de sites web.",
   avatarUrl: "https://avatars.githubusercontent.com/u/55576838?v=4",
   personalWebsiteUrl: "https://raphael-selwa-curriculum-vitae.vercel.app/",
   contact: {
